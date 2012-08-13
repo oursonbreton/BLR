@@ -2,16 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:layout_gravity="right"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/defautLeftPadding" >
 
-    <TextView
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_height="wrap_content" >
 
-    <Button
-        android:id="@+id/buttoncarte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carte" />
+        <TextView
+            android:id="@+id/Favoris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FavoryMainText" />
+
+        <EditText
+            android:id="@+id/FavorySearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/FavorySearch" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/FavoryLv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
 </LinearLayout>

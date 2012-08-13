@@ -3,5 +3,7 @@
 
     <string name="hello">Hello World, BusLineReaderActivity!</string>
     <string name="app_name">BusLineReader</string>
+    <string name="FavoryMainText">Favoris</string>
+    <string name="FavorySearch"> Rechercher</string>
 
 </resources>

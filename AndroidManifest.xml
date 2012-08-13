@@ -13,13 +13,17 @@
         <activity
             android:name=".BusLineReaderActivity"
             android:label="@string/app_name" >
+        </activity>
+        
+        <activity android:name = ".IHM.StartActivity"
+            android:label="@string/app_name">
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         
         <activity
             android:name=".IHM.LineView"
@@ -28,7 +32,8 @@
         
     </application>
         
-        <!-- Permission demandé pour mapsforge (de toute façon, on en a besoin partout ) -->
+        <!-- Permission query by mapsforge (anyway, we need it for read/write hour lines) -->
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
