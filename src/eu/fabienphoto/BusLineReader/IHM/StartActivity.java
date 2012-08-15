@@ -11,7 +11,7 @@ import android.widget.ListView;
  * @author fabien
  *
  */
-public class StartActivity extends Activity {
+public class StartActivity extends BLRActivity {
 
 	
 	@Override

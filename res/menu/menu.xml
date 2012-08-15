@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item android:id="@+id/Mpref"
+		  android:title="@string/menupref" />
+
+
+<item android:id="@+id/Mfavorites"
+		  android:title="@string/menufavorites" />
+
+    <item android:id="@+id/Mquit"
+          android:title="@string/menuquit" />
+    
+</menu>

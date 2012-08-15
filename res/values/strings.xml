@@ -5,5 +5,11 @@
     <string name="app_name">BusLineReader</string>
     <string name="FavoryMainText">Favoris</string>
     <string name="FavorySearch"> Rechercher</string>
+    <string name="menupref">Pref.</string>
+    <string name="menuquit">Quitter</string>
+    <string name="menufavorites">Fav.</string>
+    <string name="prefnotifTitle">Notifications</string>
+    <string name="preefusenotification">Utiliser les notifications</string>
+    <string name="prefNetworkTitle">Réseaux utilisés</string>
 
 </resources>
