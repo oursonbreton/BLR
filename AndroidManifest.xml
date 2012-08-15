@@ -30,6 +30,11 @@
             android:label="@string/app_name" >
         </activity>
         
+        <activity
+            android:name=".IHM.Preferences"
+            android:label="@string/app_name" >
+        </activity>
+        
     </application>
         
         <!-- Permission query by mapsforge (anyway, we need it for read/write hour lines) -->
