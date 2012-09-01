@@ -8,6 +8,9 @@
 <item android:id="@+id/Mfavorites"
 		  android:title="@string/menufavorites" />
 
+    <item android:id="@+id/MLines"
+          android:title="@string/menuLines" />
+
     <item android:id="@+id/Mquit"
           android:title="@string/menuquit" />
     

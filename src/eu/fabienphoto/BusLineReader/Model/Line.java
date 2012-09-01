@@ -9,6 +9,9 @@ public class Line {
 	private int accessible;
 	private boolean full; //if data are provided or not
 	
+	private Network reseau;
+	
+
 	//constructeur par defaut
 	public Line(String code) {
 		this.code = code;
@@ -49,5 +52,14 @@ public class Line {
 	private void provide() {
 		//TODO fournir le db
 	}
+	
+	
+	public Network getReseau() {
+		return reseau;
+	}
 
+	public void setReseau(Network reseau) {
+		this.reseau = reseau;
+	}
+	
 }

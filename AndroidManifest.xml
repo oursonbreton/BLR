@@ -15,6 +15,7 @@
             android:label="@string/app_name" >
         </activity>
         
+        <!--Favories, TO FINISH -->
         <activity android:name = ".IHM.StartActivity"
             android:label="@string/app_name">
             
@@ -25,13 +26,22 @@
             </intent-filter>
         </activity>
         
+        <!--carte , abandonné? -->
         <activity
             android:name=".IHM.LineView"
             android:label="@string/app_name" >
         </activity>
         
+        <!--préférences et téléchargement de nouveaux réseau -->
         <activity
             android:name=".IHM.Preferences"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        <!-- Listes des lignes par réseau -->
+        <activity
+            android:name=".IHM.LinesActivity"
             android:label="@string/app_name" >
         </activity>
         

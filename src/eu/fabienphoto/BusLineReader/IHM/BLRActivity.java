@@ -41,6 +41,11 @@ abstract class BLRActivity extends Activity {
 			
 		case R.id.Mquit:
 			logout();
+
+			
+		case R.id.MLines:
+			Intent LinesIntent = new Intent(getApplicationContext(), LinesActivity.class);
+			startActivity(LinesIntent);
 		
 		}
 		
