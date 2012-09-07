@@ -8,6 +8,7 @@ import eu.fabienphoto.BusLineReader.Controller.NetworkController;
 import eu.fabienphoto.BusLineReader.IHM.LineElement.LinesAdapter;
 import eu.fabienphoto.BusLineReader.Model.Network;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -40,9 +41,17 @@ public class LinesActivity  extends Activity {
 		LinesList.setOnChildClickListener(new OnChildClickListener() {    
 	        public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,int childPosition,long id) {
 
-	            Log.d("line activity","ligne n°: " + ((TextView) v.findViewById(R.id.LineitemCode)).getText()+" reseau: " + reseaux.get(groupPosition).getName() );
+	             Bundle donnes = new Bundle();
+	             donnes.putString("line",  ((TextView) v.findViewById(R.id.LineitemCode)).getText().toString()  );
+	             donnes.putString("network", reseaux.get(groupPosition).getName()  );
 
-	            return false;
+				Log.d("line activity","ligne n°: " + donnes.getString("line")+" reseau: " + donnes.getString("network") );
+				
+				Intent lineIntent = new Intent(getApplicationContext(), LineActivity.class);
+				lineIntent.putExtras(donnes);
+				startActivity(lineIntent);
+   
+	            return true;
 	        }
 	    });
 
